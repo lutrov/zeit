@@ -23,7 +23,6 @@ define('ZEIT_DATE_FORMAT_LONG', _x('l, j F Y H:i T (\U\T\CP)', 'timezone date fo
 add_action('wp_before_admin_bar_render', 'zeit_server_date_time');
 function zeit_server_date_time() {
 	global $wp_admin_bar;
-	$timezone_format = _x('Y-m-d G:i:s', 'timezone date format');
 	$wp_admin_bar->add_menu(array(
 		'id' => 'zeit',
 		'title' => sprintf('<span class="ab-label">%s</span>', date_i18n(apply_filters('zeit_date_format_short_filter', ZEIT_DATE_FORMAT_SHORT))),

@@ -15,7 +15,7 @@ defined('ABSPATH') || die('Ahem.');
 // Constants used by this plugin.
 //
 define('ZEIT_DATE_FORMAT_SHORT', _x('d-M-y H:i', 'timezone date format'));
-define('ZEIT_DATE_FORMAT_LONG', _x('l, j F Y H:i', 'timezone date format'));
+define('ZEIT_DATE_FORMAT_LONG', _x('l, j F Y H:i T (\U\T\CP)', 'timezone date format'));
 
 //
 // Show the time.

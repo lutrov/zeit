@@ -5,7 +5,7 @@ Plugin Name: Zeit
 Description: Shows the local server date and time in the dashboard adminbar. Why this plugin name? Zeit means "time" in German.
 Author: Ivan Lutrov
 Author URI: http://lutrov.com/
-Version: 2.1
+Version: 2.0
 Notes: This plugin provides an API to customise the default constant values. See the "readme.md" file for more.
 */
 

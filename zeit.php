@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /*
 Plugin Name: Zeit
@@ -29,9 +29,9 @@ function zeit_server_date_time() {
 	}
 	$wp_admin_bar->add_menu(array(
 		'id' => 'zeit',
-		'title' => sprintf('<span class="ab-label">%s</span>', apply_filters('zeit_date_format_short_filter', date(ZEIT_DATE_FORMAT_SHORT))),
+		'title' => sprintf('<span class="ab-label">%s</span>', date(apply_filters( 'zeit_date_format_short_filter', ZEIT_DATE_FORMAT_SHORT))),
 		'meta' => array(
-			'title' => __('Local server time is ') . apply_filters('zeit_date_format_long_filter', date($long))
+			'title' => __('Local server time is ') . date(apply_filters('zeit_date_format_long_filter', $long))
 		),
 		'href' => '#'
 	));

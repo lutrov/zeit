@@ -28,9 +28,9 @@ function zeit_server_date_time() {
 		$long = ZEIT_DATE_FORMAT_LONG;
 		$wp_admin_bar->add_menu(array(
 			'id' => 'zeit',
-			'title' => sprintf('<span class="ab-label">%s</span>', date_i18n(apply_filters('zeit_date_format_short_filter', ZEIT_DATE_FORMAT_SHORT))),
+			'title' => sprintf('<span class="ab-label">%s</span>', date_i18n(apply_filters('zeit_date_format_short', ZEIT_DATE_FORMAT_SHORT))),
 			'meta' => array(
-				'title' => __('Local server time is ') . date_i18n(apply_filters('zeit_date_format_long_filter', $long))
+				'title' => __('Local server time is ') . date_i18n(apply_filters('zeit_date_format_long', $long))
 			),
 			'href' => '#'
 		));

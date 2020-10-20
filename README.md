@@ -11,13 +11,13 @@ This project is licensed under the [GNU GPL](http://www.gnu.org/licenses/old-lic
 This plugin provides an API to to customise the default constant values and control the output short and long date formats. See these examples:
 
 	// ---- Change the Zeit plugin short date format.
-	add_filter('zeit_date_format_short_filter', 'custom_zeit_date_format_short_filter');
+	add_filter('zeit_date_format_short', 'custom_zeit_date_format_short_filter');
 	function custom_zeit_date_format_short_filter($format) {
 		return 'd-M-y H:i';
 	}
 
 	// ---- Change the Zeit plugin long date format.
-	add_filter('zeit_date_format_long_filter', 'custom_zeit_date_format_long_filter');
+	add_filter('zeit_date_format_long', 'custom_zeit_date_format_long_filter');
 	function custom_zeit_date_format_long_filter($format) {
 		return 'l, j F Y g:ia';
 	}
